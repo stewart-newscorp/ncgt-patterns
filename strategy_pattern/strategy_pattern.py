@@ -37,7 +37,7 @@ def create_config_reader(file: str) -> ConfigStrategy:
 
 # Usage example
 if __name__ == "__main__":
-    config_file = "config.yaml" # config.toml, config.yaml, config.json
+    config_file = "config.json" # config.toml, config.yaml, config.json
     config_reader = create_config_reader(config_file)
     config = config_reader.read_config(config_file)
     print(config)
